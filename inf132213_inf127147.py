@@ -9,7 +9,6 @@ import warnings
 
 
 def _wav2array(nchannels, sampwidth, data):
-    """data must be the string containing the bytes from the wav file."""
     num_samples, remainder = divmod(len(data), sampwidth * nchannels)
     if remainder > 0:
         raise ValueError('The length of data is not a multiple of '
@@ -32,12 +31,6 @@ def _wav2array(nchannels, sampwidth, data):
 
 
 def readwav(file):
-    """
-    Read a wav file.
-    Returns the frame rate, sample width (in bytes) and a numpy array
-    containing the data.
-    This function does not read compressed wav files.
-    """
     wav = wave.open(file)
     rate = wav.getframerate()
     nchannels = wav.getnchannels()
