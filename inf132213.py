@@ -21,6 +21,7 @@ import subprocess
 import scipy.io.wavfile
 import soundfile as sf
 # from soundfile import *
+import pyaudio as pa
 
 
 def read_wave(name):
@@ -41,6 +42,6 @@ if __name__ == "__main__":
     # print(signal)
 
     
-    data, samplerate = sf.read('./train/trainall/002_M.wav')
-    print(samplerate);
+    # data, samplerate = sf.read('./train/trainall/002_M.wav')
+    # print(samplerate);
     # read_wave('./train/trainall/002_M.wav');
