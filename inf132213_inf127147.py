@@ -97,7 +97,7 @@ def load3(path_to_file):
 
     # plt.show()
 def gender(vale):
-    if(vale < 155):
+    if(vale < 175):
         return 'M'
     else:
         return 'K'
@@ -117,6 +117,5 @@ if __name__ == "__main__":
             except RuntimeWarning:
                 print('Warning')
         print(results/full)        
-
     else:
         print(gender(load3(sys.argv[1])))
