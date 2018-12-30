@@ -1,14 +1,8 @@
 # !/usr/local/bin/python3.7
-from matplotlib import pyplot as plt
 import matplotlib as mp
 import numpy as np
 import math as mt
-
-from pylab import *
-from scipy import *
-
 import wave
-import numpy
 import struct
 import functools
 import os
@@ -44,4 +38,6 @@ if __name__ == "__main__":
     
     # data, samplerate = sf.read('./train/trainall/002_M.wav')
     # print(samplerate);
+    data, samplerate = sf.read('./train/trainall/003_K.wav')
+    print(samplerate);
     # read_wave('./train/trainall/002_M.wav');
